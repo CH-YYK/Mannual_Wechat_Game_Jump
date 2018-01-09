@@ -58,9 +58,11 @@ class Jump:
         os.system('adb shell input swipe 1 1 1 1 %d' % time)
 
 # other auxiliary functions
+# fetch screencap and plot it
 def fun1():
     test.main_execution_part1()
 
+# send swipe request to phone with time
 def fun2():
     test.main_execution_part2()
     time.sleep(1)
@@ -69,3 +71,4 @@ def fun2():
 
 if __name__ == '__main__':
     test = Jump()
+    fun1()
