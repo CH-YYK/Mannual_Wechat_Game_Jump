@@ -10,7 +10,7 @@ class Jump:
         self.time = None
         self.coord = None
 
-        self.ratio = 1.7
+        self.ratio = 2
 
         #
         self.fig = None
