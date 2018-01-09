@@ -44,7 +44,7 @@ class Jump:
             global x, y
             x, y = event.xdata, event.ydata
             self.coord.append((x, y))
-
+            self.ax.plot([x[0] for x in self.coord], [y[1] for y in self.coord],"ro-")
             if len(self.coord) == 2:
                 self.fig.canvas.mpl_disconnect(cid)
 
